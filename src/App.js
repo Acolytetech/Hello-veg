@@ -98,6 +98,7 @@ const App = () => {
             <div className="text-center md:text-left">
               <img src={logo} alt="Hello Veg Logo" className="w-28 h-20 object-cover mx-auto md:mx-0 mb-4 rounded" />
               <h2 className="text-2xl">खेत से आपकी थाली तक</h2>
+              <p>vinod.kalwania777@gmail.com</p>
             </div>
 
             <div>

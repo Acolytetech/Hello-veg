@@ -40,7 +40,7 @@ const Home = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("https://formsubmit.co/ajax/your-email@example.com", {
+      const response = await fetch("https://formsubmit.co/ajax/vinod.kalwania777@gmail.com", {
         method: "POST",
         headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
         body: JSON.stringify(formData)
