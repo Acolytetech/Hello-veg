@@ -5,12 +5,15 @@ const ProductCard = ({ product }) => {
 
   return (
     <div className="border rounded-lg p-1 md:p-4 shadow-md bg-white">
-      <img src={product.image} alt={product.name} className="w-full  md:h-60 object-cover object-center rounded" />
-      <h2 className="text-xl font-bold mt-2">{product.name}</h2>
-      <p className="text-sm text-gray-600">{product.description}</p>
+      <div className="w-full max-h-32 shadow-md overflow-hidden rounded-xl" >
+
+      <img src={product.image} alt={product.name} width='100%' height='100%' className=' object-cover object-center rounded' />
+      </div>
+      <h2 className="text-sm font-bold mt-2">{product.name}</h2>
+      <p className="hidden md:block text-sm text-gray-600">{product.description}</p>
       <button
         onClick={() => setShowForm(true)}
-        className="mt-3 bg-green-600 text-white px-4  mb-2 py-2 rounded hover:bg-green-700"
+        className="mt-3 text-xs bg-green-600 text-white px-2 md:px-4  mb-2 py-2 rounded hover:bg-green-700"
       >
         Book Now
       </button>

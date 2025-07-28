@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import banner from "../img/Green and Orange Vegetables Email Header.png";
 import Fruits from './Fruits';
 import Vegetables from './Vegetables';
+import whychhooseimg from"../img/Colorful Fresh Fruit Delivery Promotion Instagram Post.png";
 import { FaInstagram, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
 
 
@@ -91,12 +92,20 @@ const Home = () => {
         <Fruits />
       </section>
 
-      {/* Why Choose Section */}
-      <section className="bg-yellow-100 py-10 px-4 rounded-lg shadow mt-10">
-        <h2 className="text-2xl sm:text-3xl font-bold mb-3">Why Choose Hello Veg?</h2>
-        <p className="text-lg font-medium">Get fresh farm produce delivered within <span className="text-green-700 font-bold">25 minutes</span> right to your doorstep!</p>
-        <p className="mt-2">Promoting local farmers and ensuring healthy food for every home.</p>
-      </section>
+    {/* Why Choose Section */}
+<section className="bg-yellow-100 py-10 px-4 rounded-lg shadow mt-10 grid grid-cols-1 sm:grid-cols-2 gap-6">
+  <div className='items-cente my-auto flex-col space-y-10'>
+    <h2 className="text-2xl sm:text-3xl font-bold text-green-600 mb-3">Why Choose Hello Veg?</h2>
+    <p className="text-lg font-medium">
+      Get fresh farm produce delivered within <span className="text-green-700 font-bold">25 minutes</span> right to your doorstep!
+    </p>
+    <p className="mt-2">Promoting local farmers and ensuring healthy food for every home.</p>
+  </div>
+  <div>
+    <img src={whychhooseimg} alt="Why choose Hello Veg" className="w-full h-96 object-cover rounded-md"/>
+  </div>
+</section>
+
 
       {/* Vegetables Section */}
       <section className="mt-10">
